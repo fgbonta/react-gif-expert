@@ -9,11 +9,11 @@ export const getGifs = async (category) => {
         return {
             id: img.id,
             title: img.title,
-            url: img.images.downsized_medium,
+            url: img.images.downsized_medium.url,
         }
     })
 
-    console.log(gifs);
+    //console.log(gifs);
     return gifs;
 
 }
